@@ -2,7 +2,7 @@
 
 
 const NBR_MIN =0;
-const NBR_MAX =5;
+const NBR_MAX =32000;
 
 $nombre = rand (NBR_MIN, NBR_MAX);
 
@@ -20,12 +20,12 @@ $nombre = rand (NBR_MIN, NBR_MAX);
             <label>
                 Devinez un nombre entre <?= NBR_MIN ?> et <?= NBR_MAX ?>
                 <br>
-                <input type="text" name="nbr">
+                <input type="text" name="nombre">
                 <p>
                 <input type="submit" name="test" value="Tester">
                 <br>
                 </p>
-                <input type="hidden" value="<?= $nombre ?>"> 
+                <input type="hidden" name="valeurADeviner" value="<?= $nombre ?>"> 
             </label>
         </form>
     </body>

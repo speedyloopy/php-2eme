@@ -9,13 +9,14 @@ if ($gagne) {
     $titre = "you Win";
     }else{
         $titre = "You Loose";
+}
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <title><?= $titre ?></title>
-        <meta content ="">
+        <meta content ="utf-8">
     </head>
     <body>
         <?php
@@ -25,7 +26,9 @@ if ($gagne) {
             } else {
         ?>
         <h1> Vous avez perdu</h1>
-        <a href ="javascript:history.back()">réessayer</a>
-        
+       <a href ="javascript:history.back()">réessayer</a>
+<?php 
+    }
+?>
     </body>
 </html>
