@@ -1,4 +1,4 @@
-<?php>
+<?php
 
 
 const NBR_MIN =0;
@@ -16,10 +16,17 @@ $nombre = rand (NBR_MIN, NBR_MAX);
       </head>
     <body>
         <h3>Jeu de devinette</h3>
-        <p>Devinez un nombre entre 0 et 5</p>
         <form name="form1" method="post" action="resultat.php">
-        <input type="text" name="nbr">
-        
+            <label>
+                Devinez un nombre entre <?= NBR_MIN ?> et <?= NBR_MAX ?>
+                <br>
+                <input type="text" name="nbr">
+                <p>
+                <input type="submit" name="test" value="Tester">
+                <br>
+                </p>
+                <input type="hidden" value="<?= $nombre ?>"> 
+            </label>
         </form>
     </body>
 </html>
