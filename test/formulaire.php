@@ -17,7 +17,7 @@
                 
                 
                 <!--où l'utilisateur va entrer le nombre-->
-                <input type="number" name="nombre" >
+                <input type="number" name="nombre" min="2" max="16">
                 
                 
                 <!--bouton submit-->

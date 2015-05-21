@@ -1,6 +1,6 @@
 <?php
 /*déclaration des variables*/
-$nombre= $_POST['nombre'];
+$nombre= filter_input(INPUT_POST, 'nombre', FILTER_SANITIZE_NUMBER_INT);
 
 
 ?>
